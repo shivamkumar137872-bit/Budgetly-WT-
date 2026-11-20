@@ -1,9 +1,4 @@
-/* ==================================================
-   BUDGETLY - ADMIN SIDE CUSTOM CSS
-   ================================================== */
 
-
-/* ---------- GENERAL ---------- */
 
 body {
     font-family: Arial, sans-serif;
@@ -12,33 +7,41 @@ body {
 }
 
 
-/* ---------- SIDEBAR ---------- */
+/* ---------- NAVBAR ---------- */
 
-.sidebar {
-    min-height: 100vh;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.sidebar .nav-link {
-    border-radius: 8px;
-    margin: 4px 0;
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    margin-left: 5px;
     transition: 0.3s ease;
 }
 
-.sidebar .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateX(3px);
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-1px);
 }
 
-.sidebar .nav-link.active {
+.navbar .nav-link.active {
     font-weight: 600;
 }
 
 
-/* ---------- MAIN CONTENT ---------- */
+/* ---------- PAGE HEADER ---------- */
 
-main {
-    min-height: 100vh;
+.container > .text-center h1 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: #6c757d !important;
 }
 
 
@@ -62,7 +65,7 @@ main {
 }
 
 
-/* ---------- DASHBOARD CARDS ---------- */
+/* ---------- DASHBOARD SUMMARY CARDS ---------- */
 
 .card h2,
 .card h3,
@@ -83,6 +86,22 @@ main {
 }
 
 
+/* ---------- FORMS ---------- */
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.15rem rgba(108, 117, 125, 0.15);
+}
+
+
 /* ---------- TABLES ---------- */
 
 .table {
@@ -91,7 +110,6 @@ main {
 
 .table thead th {
     font-weight: 600;
-    white-space: nowrap;
 }
 
 .table tbody tr {
@@ -103,33 +121,12 @@ main {
 }
 
 
-/* ---------- FORMS ---------- */
-
-.form-control,
-.form-select {
-    border-radius: 8px;
-    padding: 10px 12px;
-}
-
-.form-control:focus,
-.form-select:focus {
-    box-shadow: 0 0 0 0.15rem rgba(108, 117, 125, 0.15);
-}
-
-
-/* ---------- BADGES ---------- */
-
-.badge {
-    padding: 7px 10px;
-    border-radius: 6px;
-}
-
-
 /* ---------- PROGRESS BARS ---------- */
 
 .progress {
     height: 10px;
     border-radius: 10px;
+    background-color: #e9ecef;
 }
 
 .progress-bar {
@@ -144,10 +141,29 @@ main {
 }
 
 
+/* ---------- BADGES ---------- */
+
+.badge {
+    padding: 7px 10px;
+    border-radius: 6px;
+}
+
+
 /* ---------- ICONS ---------- */
 
 .bi {
     vertical-align: -0.1em;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
 }
 
 
@@ -162,17 +178,23 @@ a {
 
 @media (max-width: 991px) {
 
-    .sidebar {
-        min-height: auto;
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 8px 0;
     }
 
-    main {
-        min-height: auto;
+    .navbar-nav {
+        padding-top: 10px;
     }
 }
 
 
 @media (max-width: 768px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .card {
         margin-bottom: 15px;
@@ -220,5 +242,9 @@ a {
 
     .table {
         font-size: 13px;
+    }
+
+    footer {
+        margin-top: 25px;
     }
 }
