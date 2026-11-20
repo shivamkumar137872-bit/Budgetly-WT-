@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Income - Budgetly</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">      
+
+</head>
+
+
+<body class="bg-light">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="Client.html">
+
+                <i class="bi bi-wallet2 me-2"></i>
+
+                Budgetly
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Client.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="income.html">
+                            Income
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="expenses.html">
+                            Expenses
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="budget.html">
+                            Budget
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+
+            <!-- Page Heading -->
+
+            <div class="mb-4">
+
+                <h2 class="fw-bold">
+                    <i class="bi bi-arrow-down-circle text-success me-2"></i>
+                    Add Income
+                </h2>
+
+                <p class="text-muted">
+                    Record your income and keep track of your earnings.
+                </p>
+
+            </div>
+
+
+
+            <div class="row g-4">
+
+
+                <!-- ================= INCOME FORM ================= -->
+
+                <div class="col-lg-7">
+
+                    <div class="card border-0 shadow-sm">
+
+                        <div class="card-body p-4">
+
+                            <h5 class="fw-bold mb-4">
+                                Income Details
+                            </h5>
+
+
+                            <form>
+
+
+                                <!-- Income Amount -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+                                        Income Amount
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+                                            ₹
+                                        </span>
+
+                                        <input type="number"
+                                               class="form-control"
+                                               placeholder="Enter amount"
+                                               required>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Income Source -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+                                        Income Source
+                                    </label>
+
+                                    <select class="form-select" required>
+
+                                        <option value="">
+                                            Select income source
+                                        </option>
+
+                                        <option>
+                                            Salary
+                                        </option>
+
+                                        <option>
+                                            Freelancing
+                                        </option>
+
+                                        <option>
+                                            Business
+                                        </option>
+
+                                        <option>
+                                            Investment
+                                        </option>
+
+                                        <option>
+                                            Gift
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+
+                                <!-- Date -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+                                        Date
+                                    </label>
+
+                                    <input type="date"
+                                           class="form-control"
+                                           required>
+
+                                </div>
+
+
+
+                                <!-- Description -->
+
+                                <div class="mb-4">
+
+                                    <label class="form-label fw-semibold">
+                                        Description
+                                    </label>
+
+                                    <textarea class="form-control"
+                                              rows="4"
+                                              placeholder="Enter description"></textarea>
+
+                                </div>
+
+
+
+                                <!-- Buttons -->
+
+                                <div class="d-flex gap-2">
+
+                                    <button type="submit"
+                                            class="btn btn-success">
+
+                                        <i class="bi bi-plus-circle me-1"></i>
+
+                                        Add Income
+
+                                    </button>
+
+
+                                    <a href="dashboard.html"
+                                       class="btn btn-outline-secondary">
+
+                                        <i class="bi bi-arrow-left me-1"></i>
+
+                                        Back to Dashboard
+
+                                    </a>
+
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= INCOME SUMMARY ================= -->
+
+                <div class="col-lg-5">
+
+                    <div class="card border-0 shadow-sm">
+
+                        <div class="card-body p-4">
+
+                            <h5 class="fw-bold mb-4">
+                                Income Summary
+                            </h5>
+
+
+                            <div class="d-flex justify-content-between mb-3">
+
+                                <span class="text-muted">
+                                    This Month
+                                </span>
+
+                                <strong class="text-success">
+                                    ₹40,000
+                                </strong>
+
+                            </div>
+
+
+                            <hr>
+
+
+                            <div class="d-flex justify-content-between mb-3">
+
+                                <span class="text-muted">
+                                    Total Income
+                                </span>
+
+                                <strong>
+                                    ₹1,20,000
+                                </strong>
+
+                            </div>
+
+
+                            <hr>
+
+
+                            <div class="text-center mt-4">
+
+                                <div class="text-success fs-1">
+
+                                    <i class="bi bi-graph-up-arrow"></i>
+
+                                </div>
+
+                                <p class="text-muted mb-0">
+                                    Keep tracking your income regularly.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= RECENT INCOME ================= -->
+
+            <div class="card border-0 shadow-sm mt-4">
+
+                <div class="card-body p-4">
+
+                    <h5 class="fw-bold mb-3">
+                        Recent Income
+                    </h5>
+
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover align-middle">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Date</th>
+
+                                    <th>Source</th>
+
+                                    <th>Description</th>
+
+                                    <th>Amount</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        24 Sep 2026
+                                    </td>
+
+                                    <td>
+                                        <i class="bi bi-briefcase me-2"></i>
+                                        Salary
+                                    </td>
+
+                                    <td>
+                                        Monthly salary
+                                    </td>
+
+                                    <td class="text-success fw-semibold">
+                                        + ₹40,000
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        15 Sep 2026
+                                    </td>
+
+                                    <td>
+                                        <i class="bi bi-laptop me-2"></i>
+                                        Freelancing
+                                    </td>
+
+                                    <td>
+                                        Website project
+                                    </td>
+
+                                    <td class="text-success fw-semibold">
+                                        + ₹8,000
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        05 Sep 2026
+                                    </td>
+
+                                    <td>
+                                        <i class="bi bi-cash-stack me-2"></i>
+                                        Business
+                                    </td>
+
+                                    <td>
+                                        Business income
+                                    </td>
+
+                                    <td class="text-success fw-semibold">
+                                        + ₹12,000
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white text-center py-3">
+
+        <div class="container">
+
+            <small>
+                © 2026 Budgetly. All Rights Reserved.
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

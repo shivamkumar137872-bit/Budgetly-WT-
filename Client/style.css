@@ -1,0 +1,250 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #212529;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    margin-left: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+.navbar .nav-link.active {
+    font-weight: 600;
+}
+
+
+/* ---------- PAGE HEADER ---------- */
+
+.container > .text-center h1 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+
+/* ---------- DASHBOARD SUMMARY CARDS ---------- */
+
+.card h2,
+.card h3,
+.card h4 {
+    font-weight: 700;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+
+/* ---------- FORMS ---------- */
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.15rem rgba(108, 117, 125, 0.15);
+}
+
+
+/* ---------- TABLES ---------- */
+
+.table {
+    vertical-align: middle;
+}
+
+.table thead th {
+    font-weight: 600;
+}
+
+.table tbody tr {
+    transition: 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+
+/* ---------- PROGRESS BARS ---------- */
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+
+/* ---------- ALERTS ---------- */
+
+.alert {
+    border-radius: 10px;
+}
+
+
+/* ---------- BADGES ---------- */
+
+.badge {
+    padding: 7px 10px;
+    border-radius: 6px;
+}
+
+
+/* ---------- ICONS ---------- */
+
+.bi {
+    vertical-align: -0.1em;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ---------- LINKS ---------- */
+
+a {
+    transition: 0.2s ease;
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 991px) {
+
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 8px 0;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-body {
+        padding: 16px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
